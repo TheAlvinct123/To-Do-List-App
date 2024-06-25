@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">            <!-- Set the viewport to make the website responsive -->
+    <title>To-Do List App</title>                                                   <!-- The title of the webpage -->
+    <link rel="stylesheet" href="style.css">                                        <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">                                                         <!-- Container div to hold the to-do app -->
+        <div class="todo-app">                                                      <!-- Div for the to-do app content -->
+            <h2>To-Do List <img src="images/icon.png"></h2>                         <!-- Heading with an image icon -->
+            <div class="row">                                                       <!-- Div for the input and button row -->
+                <input type="text" id="input-box" placeholder="Add your text">      <!-- Input box for adding tasks -->
+                <button onclick="addTask()">Add</button>                            <!-- Button to add tasks, calls the addTask() function on click -->
+            </div>
+            <ul id="list-container">                                                <!-- Unordered list to contain the tasks -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>                                               <!-- Link to the external JavaScript file -->
+</body>
+</html>

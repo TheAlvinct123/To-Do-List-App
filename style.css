@@ -1,0 +1,102 @@
+*{
+    margin: 0;                                                  /* Resets the default margin for all elements */
+    padding: 0;                                                 /* Resets the default padding for all elements */
+    font-family: 'Poppins', sans-serif;                         /* Sets the default font family for all elements to 'Poppins', with sans-serif as a fallback */
+    box-sizing: border-box;                                     /* Ensures that the padding and border are included in the element's total width and height */
+}
+.container{
+    width: 100%;                                                /* Sets the container's width to 100% of its containing element */
+    min-height: 100vh;                                          /* Ensures the container's minimum height is 100% of the viewport height */
+    background: linear-gradient(45deg, #2E3192, #1BFFFF);   /* Sets a linear gradient background with a 45-degree angle, transitioning from #2E3192 to #1BFFFF */
+    padding: 10px;                                              /* Adds 10px padding around the container */
+}
+.todo-app{
+    width: 100%;                                                /* Sets the todo-app's width to 100% of its containing element */
+    max-width: 540px;                                           /* Sets the maximum width of the todo-app to 540px */
+    background: white;                                        /* Sets the background color of the todo-app to white */
+    margin: 100px auto 20px;                                    /* Centers the todo-app horizontally and adds 100px margin at the top, 20px at the bottom, and automatic left/right margins */
+    padding: 40px 30px 70px;                                    /* Adds padding of 40px at the top, 30px on the sides, and 70px at the bottom */
+    border-radius: 10px;                                        /* Rounds the corners of the todo-app with a 10px radius */
+}
+.todo-app h2{
+    color: #002765;                                           /* Sets the color of the heading text */
+    display: flex;                                              /* Applies flexbox layout to the heading */
+    align-items: center;                                        /* Centers the items vertically within the heading */
+    margin-bottom: 20px;                                        /* Adds a 20px margin below the heading */
+}
+.todo-app h2 img{
+    width: 30px;                                                /* Sets the width of the image to 30px */
+    margin-left: 10px;                                          /* Adds a 10px margin to the left of the image */
+}
+.row{
+    display: flex;                                              /* Applies flexbox layout to the row */
+    align-items: center;                                        /* Centers the items vertically within the row */
+    justify-content: space-between;                             /* Distributes space evenly between the items */
+    background: #edeef0;                                      /* Sets the background color of the row */
+    padding-left: 20px;                                         /* Adds 20px padding to the left side of the row */
+    margin-bottom: 25px;                                        /* Adds a 25px margin below the row */
+    border-radius: 30px;                                        /* Rounds the corners of the row with a 30px radius */
+}
+input{
+    flex: 1;                                                    /* Allows the input to grow and fill available space */
+    border: none;                                               /* Removes the border from the input */
+    outline: none;                                              /* Removes the outline from the input when focused */
+    background: transparent;                                    /* Makes the background of the input transparent */
+    padding: 10px;                                              /* Adds 10px padding inside the input */
+}
+button{
+    border: none;                                               /* Removes the border from the button */
+    outline: none;                                              /* Removes the outline from the button when focused */
+    padding: 16px 50px;                                         /* Adds 16px vertical padding and 50px horizontal padding inside the button */
+    background: #ff5945;                                      /* Sets the background color of the button */
+    color: #fff;                                              /* Sets the text color of the button */
+    font-size: 16px;                                            /* Sets the font size of the button text */
+    cursor: pointer;                                            /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 40px;                                        /* Rounds the corners of the button with a 40px radius */
+}
+ul li{
+    list-style: none;                                           /* Removes the default list styling */
+    font-size: 17px;                                            /* Sets the font size of the list items */
+    padding: 12px 8px 12px 50px;                                /* Adds padding inside the list items */
+    user-select: none;                                          /* Prevents the text from being selected */
+    cursor: pointer;                                            /* Changes the cursor to a pointer when hovering over the list items */
+    position: relative;                                         /* Positions the list items relative to their normal position */
+}
+ul li::before{
+    content: '';                                                /* Adds a pseudo-element before the list items */
+    position: absolute;                                         /* Positions the pseudo-element absolutely within the list items */
+    height: 28px;                                               /* Sets the height of the pseudo-element */
+    width: 28px;                                                /* Sets the width of the pseudo-element */
+    border-radius: 50%;                                         /* Rounds the corners of the pseudo-element */
+    background-image: url(images/unchecked.png);                /* Sets the background image of the pseudo-element */
+    background-size: cover;                                     /* Ensures the background image covers the pseudo-element */
+    background-position: center;                                /* Centers the background image within the pseudo-element */
+    top: 12px;                                                  /* Positions the pseudo-element 12px from the top of the list item */
+    left: 8px;                                                  /* Positions the pseudo-element 8px from the left of the list item */
+}
+ul li.checked{
+    color: #555;                                              /* Sets the text color of checked list items */
+    text-decoration: line-through;                              /* Adds a line-through decoration to checked list items */
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);                  /* Changes the background image of the pseudo-element for checked list items */
+}
+ul li span{
+    position: absolute;                                         /* Positions the span element absolutely within the list items */
+    right: 0;                                                   /* Positions the span element at the right of the list item */
+    top: 5px;                                                   /* Positions the span element 5px from the top of the list item */
+    width: 40px;                                                /* Sets the width of the span element */
+    height: 40px;                                               /* Sets the height of the span element */
+    font-size: 22px;                                            /* Sets the font size of the span element */
+    color: #555;                                              /* Sets the text color of the span element */
+    line-height: 40px;                                          /* Centers the text vertically within the span element */
+    text-align: center;                                         /* Centers the text horizontally within the span element */
+    border-radius: 50%;                                         /* Rounds the corners of the span element */
+}
+ul li span:hover{
+    background: #edeef0;                                      /* Changes the background color of the span element on hover */
+}
+
+
+
+
